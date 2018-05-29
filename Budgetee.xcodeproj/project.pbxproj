@@ -12,8 +12,6 @@
 		BAD74BE620BC969C004F4DED /* Budgetee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BE420BC969C004F4DED /* Budgetee.xcdatamodeld */; };
 		BAD74BE820BC969D004F4DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD74BE720BC969D004F4DED /* Assets.xcassets */; };
 		BAD74BEB20BC969D004F4DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD74BE920BC969D004F4DED /* LaunchScreen.storyboard */; };
-		BAD74BF620BC969E004F4DED /* BudgeteeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BF520BC969E004F4DED /* BudgeteeTests.swift */; };
-		BAD74C0120BC969E004F4DED /* BudgeteeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD74C0020BC969E004F4DED /* BudgeteeUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +40,8 @@
 		BAD74BEA20BC969D004F4DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD74BEC20BC969D004F4DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD74BF120BC969E004F4DED /* BudgeteeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgeteeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD74BF520BC969E004F4DED /* BudgeteeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgeteeTests.swift; sourceTree = "<group>"; };
 		BAD74BF720BC969E004F4DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD74BFC20BC969E004F4DED /* BudgeteeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgeteeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD74C0020BC969E004F4DED /* BudgeteeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgeteeUITests.swift; sourceTree = "<group>"; };
 		BAD74C0220BC969E004F4DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +106,6 @@
 		BAD74BF420BC969E004F4DED /* BudgeteeTests */ = {
 			isa = PBXGroup;
 			children = (
-				BAD74BF520BC969E004F4DED /* BudgeteeTests.swift */,
 				BAD74BF720BC969E004F4DED /* Info.plist */,
 			);
 			path = BudgeteeTests;
@@ -119,7 +114,6 @@
 		BAD74BFF20BC969E004F4DED /* BudgeteeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BAD74C0020BC969E004F4DED /* BudgeteeUITests.swift */,
 				BAD74C0220BC969E004F4DED /* Info.plist */,
 			);
 			path = BudgeteeUITests;
@@ -135,6 +129,7 @@
 				BAD74BD620BC969C004F4DED /* Sources */,
 				BAD74BD720BC969C004F4DED /* Frameworks */,
 				BAD74BD820BC969C004F4DED /* Resources */,
+				BAAE010B20BD919A00D8C8CF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +245,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BAAE010B20BD919A00D8C8CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAD74BD620BC969C004F4DED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD74BF620BC969E004F4DED /* BudgeteeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD74C0120BC969E004F4DED /* BudgeteeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
