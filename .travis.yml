@@ -10,4 +10,5 @@ install:
   - carthage bootstrap --no-use-binaries --platform iOS --cache-builds
 
 script: 
-  - xcodebuild clean build -sdk iphonesimulator -project Budgetee.xcodeproj -scheme Budgetee CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean
+  - xcodebuild test -project Budgetee.xcodeproj -scheme Budgetee -destination 'platform=iOS Simulator,name=iPhone X'
