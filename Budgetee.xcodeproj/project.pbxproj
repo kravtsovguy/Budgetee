@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAC3D65B20C3D46E0036FFDD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC3D65A20C3D46E0036FFDD /* SnapKit.framework */; };
 		BAD74BDE20BC969C004F4DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BDD20BC969C004F4DED /* AppDelegate.swift */; };
 		BAD74BE020BC969C004F4DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BDF20BC969C004F4DED /* ViewController.swift */; };
 		BAD74BE620BC969C004F4DED /* Budgetee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BE420BC969C004F4DED /* Budgetee.xcdatamodeld */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BAC3D65A20C3D46E0036FFDD /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		BAD74BDA20BC969C004F4DED /* Budgetee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budgetee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD74BDD20BC969C004F4DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD74BDF20BC969C004F4DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC3D65B20C3D46E0036FFDD /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAC3D65920C3D46D0036FFDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC3D65A20C3D46E0036FFDD /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAD74BD120BC969C004F4DED = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +88,7 @@
 				BAD74BF420BC969E004F4DED /* BudgeteeTests */,
 				BAD74BFF20BC969E004F4DED /* BudgeteeUITests */,
 				BAD74BDB20BC969C004F4DED /* Products */,
+				BAC3D65920C3D46D0036FFDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +142,7 @@
 				BAD74BD720BC969C004F4DED /* Frameworks */,
 				BAD74BD820BC969C004F4DED /* Resources */,
 				BAAE010B20BD919A00D8C8CF /* ShellScript */,
+				BAC3D65C20C3D9540036FFDD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,6 +271,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		BAC3D65C20C3D9540036FFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -433,6 +461,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83W65ZB2H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Budgetee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,6 +485,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83W65ZB2H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Budgetee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
