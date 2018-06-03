@@ -12,3 +12,8 @@ before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
   - carthage bootstrap --no-use-binaries --platform iOS --cache-builds
+
+
+script: 
+  - xcodebuild clean build -sdk iphonesimulator -project Budgetee.xcodeproj -scheme Budgetee CODE_SIGNING_REQUIRED=NO
+  
