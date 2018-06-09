@@ -207,15 +207,16 @@
 				TargetAttributes = {
 					BAD74BD920BC969C004F4DED = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1000;
 					};
 					BAD74BF020BC969E004F4DED = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 						TestTargetID = BAD74BD920BC969C004F4DED;
 					};
 					BAD74BFB20BC969E004F4DED = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 						TestTargetID = BAD74BD920BC969C004F4DED;
 					};
 				};
@@ -484,7 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.Budgetee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -508,7 +509,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.Budgetee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -530,7 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.BudgeteeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budgetee.app/Budgetee";
 			};
@@ -552,7 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.BudgeteeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budgetee.app/Budgetee";
 			};
@@ -574,7 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.BudgeteeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Budgetee;
 			};
@@ -595,7 +596,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.BudgeteeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Budgetee;
 			};
