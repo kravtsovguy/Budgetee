@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CF77D0A20CD8B0B00F9F335 /* Spending+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77D0620CD8B0B00F9F335 /* Spending+CoreDataProperties.swift */; };
+		9CF77D0B20CD8B0B00F9F335 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77D0720CD8B0B00F9F335 /* Category+CoreDataProperties.swift */; };
+		9CF77D0C20CD8B0B00F9F335 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77D0820CD8B0B00F9F335 /* Category+CoreDataClass.swift */; };
+		9CF77D0D20CD8B0B00F9F335 /* Spending+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF77D0920CD8B0B00F9F335 /* Spending+CoreDataClass.swift */; };
 		BAC3D65B20C3D46E0036FFDD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC3D65A20C3D46E0036FFDD /* SnapKit.framework */; };
 		BAC3D65E20C3F9E60036FFDD /* BudgeteeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC3D65D20C3F9E60036FFDD /* BudgeteeTests.swift */; };
 		BAC3D66020C3FB6C0036FFDD /* BudgeteeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC3D65F20C3FB6C0036FFDD /* BudgeteeTests.swift */; };
 		BAD74BDE20BC969C004F4DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BDD20BC969C004F4DED /* AppDelegate.swift */; };
-		BAD74BE020BC969C004F4DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BDF20BC969C004F4DED /* ViewController.swift */; };
+		BAD74BE020BC969C004F4DED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BDF20BC969C004F4DED /* MainViewController.swift */; };
 		BAD74BE620BC969C004F4DED /* Budgetee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAD74BE420BC969C004F4DED /* Budgetee.xcdatamodeld */; };
 		BAD74BE820BC969D004F4DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD74BE720BC969D004F4DED /* Assets.xcassets */; };
 		BAD74BEB20BC969D004F4DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD74BE920BC969D004F4DED /* LaunchScreen.storyboard */; };
@@ -35,12 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CF77D0620CD8B0B00F9F335 /* Spending+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spending+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CF77D0720CD8B0B00F9F335 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CF77D0820CD8B0B00F9F335 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CF77D0920CD8B0B00F9F335 /* Spending+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spending+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BAC3D65A20C3D46E0036FFDD /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		BAC3D65D20C3F9E60036FFDD /* BudgeteeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgeteeTests.swift; sourceTree = "<group>"; };
 		BAC3D65F20C3FB6C0036FFDD /* BudgeteeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgeteeTests.swift; sourceTree = "<group>"; };
 		BAD74BDA20BC969C004F4DED /* Budgetee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budgetee.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD74BDD20BC969C004F4DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAD74BDF20BC969C004F4DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAD74BDD20BC969C004F4DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		BAD74BDF20BC969C004F4DED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BAD74BE520BC969C004F4DED /* Budgetee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Budgetee.xcdatamodel; sourceTree = "<group>"; };
 		BAD74BE720BC969D004F4DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD74BEA20BC969D004F4DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CF77D0520CD8AF600F9F335 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CF77D0820CD8B0B00F9F335 /* Category+CoreDataClass.swift */,
+				9CF77D0720CD8B0B00F9F335 /* Category+CoreDataProperties.swift */,
+				9CF77D0920CD8B0B00F9F335 /* Spending+CoreDataClass.swift */,
+				9CF77D0620CD8B0B00F9F335 /* Spending+CoreDataProperties.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		BAC3D65920C3D46D0036FFDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +128,9 @@
 		BAD74BDC20BC969C004F4DED /* Budgetee */ = {
 			isa = PBXGroup;
 			children = (
+				9CF77D0520CD8AF600F9F335 /* Models */,
 				BAD74BDD20BC969C004F4DED /* AppDelegate.swift */,
-				BAD74BDF20BC969C004F4DED /* ViewController.swift */,
+				BAD74BDF20BC969C004F4DED /* MainViewController.swift */,
 				BAD74BE720BC969D004F4DED /* Assets.xcassets */,
 				BAD74BE920BC969D004F4DED /* LaunchScreen.storyboard */,
 				BAD74BEC20BC969D004F4DED /* Info.plist */,
@@ -279,7 +299,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nexit 1\nfi\n";
 		};
 		BAC3D65C20C3D9540036FFDD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -294,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -303,8 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF77D0D20CD8B0B00F9F335 /* Spending+CoreDataClass.swift in Sources */,
 				BAD74BE620BC969C004F4DED /* Budgetee.xcdatamodeld in Sources */,
-				BAD74BE020BC969C004F4DED /* ViewController.swift in Sources */,
+				9CF77D0C20CD8B0B00F9F335 /* Category+CoreDataClass.swift in Sources */,
+				9CF77D0A20CD8B0B00F9F335 /* Spending+CoreDataProperties.swift in Sources */,
+				9CF77D0B20CD8B0B00F9F335 /* Category+CoreDataProperties.swift in Sources */,
+				BAD74BE020BC969C004F4DED /* MainViewController.swift in Sources */,
 				BAD74BDE20BC969C004F4DED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +506,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.Budgetee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -506,6 +531,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = MEK.Budgetee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
