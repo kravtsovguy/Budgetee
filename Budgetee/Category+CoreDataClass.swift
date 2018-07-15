@@ -12,5 +12,5 @@ import CoreData
 
 @objc(Category)
 public class Category: NSManagedObject {
-
+    public static var fetchRequest = NSFetchRequest<Category>(entityName: "Category")
 }

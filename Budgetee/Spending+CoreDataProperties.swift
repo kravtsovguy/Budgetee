@@ -11,13 +11,7 @@ import Foundation
 import CoreData
 
 extension Spending {
-
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Spending> {
-        return NSFetchRequest<Spending>(entityName: "Spending")
-    }
-
     @NSManaged public var cost: Float
-    @NSManaged public var date: NSDate?
-    @NSManaged public var category: Category?
-
+    @NSManaged public var date: NSDate
+    @NSManaged public var category: Category
 }
